@@ -1,0 +1,455 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+}
+
+p {
+    color: white;
+}
+
+
+.spacer{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    margin-right: -20vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.home {
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -3vh;
+    background-image: url('./Assets/peaks.svg');
+}
+
+.navbar {
+    position: absolute;
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    top: 1vh;
+    justify-content: flex-end;
+    z-index: 3;
+}
+
+.navbar-item {
+    margin-top: .3rem;
+    font-size: 1.25rem;
+    background: none;
+    border: none;
+    margin-right: 1vw;
+    color: white;
+}
+
+.navbar-item:hover {
+    color: white;
+    background-color: rgba(80, 80, 80, 0.5);
+    cursor: pointer;
+    outline: #fff solid 1px;
+}       
+
+.homeMsg {
+    margin-top: 5em;
+    font-size: 2.5rem;
+}
+
+.subHomeMsg {
+    font-size: 2rem;
+}
+
+
+
+.projects {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.projectsTitle {
+    font-size: 3rem;
+    color: white;
+}
+
+.projectsContainer {
+    margin-top: 12vh;
+    width: 65%;
+}
+
+.projectsList {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    position: relative;
+}
+.slide {
+    padding: .2em;
+    font-size: 1.75rem;
+    position: absolute;
+    opacity: 0;
+}
+
+.githubLogo {
+    margin-top: 5px;
+    width: 32px;
+    height: auto;
+}
+
+.githubLogo:hover {
+    opacity: .5;
+}
+
+.claimsManagementOutline {
+    outline: #00e4c5 solid 4px;
+    border-radius: 1em;
+}
+
+.claimsManagementTitle {
+    color: #00e4c5;
+}
+
+.antiEbayOutline {
+    outline: #767A89 solid 4px;
+    border-radius: 1em;
+}
+
+.antiEbayTitle {
+    color: #767A89;
+
+}
+
+.twitterScraperOutline {
+    outline: #1DA1F2 solid 4px;
+    border-radius: 1em;
+}
+
+.twitterScraperTitle {
+    color: #1DA1F2;
+
+}
+.todoOutline {
+    outline: #FA9129 solid 4px;
+    border-radius: 1em;
+
+}
+
+.todoTitle {
+    color: #FA9129;
+}
+
+
+
+.slide[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+  }
+
+.carousel-button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 7rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, .5);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5r;
+    background-color: rgb(0, 0, 0, .1);
+
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+    color: white;
+    background-color: rgb(0, 0, 0, .2);
+}
+
+.carousel-button:focus {
+    outline: 1px solid black;
+}
+
+.carousel-button.prev {
+    left: 3rem;
+}
+
+.carousel-button.next {
+    right: 3rem;
+}
+
+
+.projectsBackground {
+    background-image: url('./Assets/wave1.svg'), url('./Assets/wave2.svg');
+    background-color: #002233;
+}
+
+.academicsBackground {
+    background-image: url('./Assets/wave3.svg'), url('./Assets/wave4.svg');
+    background-color: #002233;
+}
+
+.technologiesBackground {
+    background-image: url('./Assets/wave5.svg'), url('./Assets/wave6.svg');
+    background-color: #002233;
+}
+
+.aboutMeBackground {
+    background-image: url('./Assets/wave7.svg'), url('./Assets/wave8.svg');
+    background-color: #002233;
+}
+
+.academicsTitle {
+    margin-top: 19vh;
+    font-size: 3rem;
+}
+
+.academicsWhole {
+    margin-top: -1em;
+    width: 70%;
+    font-size: 1.75rem;
+
+}
+
+.academics {
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white
+}
+
+.academicsSectionRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.academicsSection {
+    margin-top: -1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flexSubsection {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: -1.5em;
+    font-size: 1.75rem;
+}
+
+.technologies {
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white
+}
+
+.technologiesTitle {
+    font-size: 3rem;
+    margin-top: 19vh;
+}
+
+.extraX-AxisMargin {
+    margin-left: 7vw;
+    margin-right: 7vw;
+}
+
+.aboutMe {
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white
+}
+
+.aboutMePhoto {
+    display: flex;
+    width: 144px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: 9vw;
+}
+.aboutMeTitle {
+    font-size: 3rem;
+    color: white;
+    margin-top: 18vh;
+}
+
+.aboutMeParagraph {
+    margin-top: -15vh;
+    width: 65%;
+    font-size: 1.75rem;
+    margin-left: 1.5vw;
+}
+
+.yAxisSpace {
+    margin-top: 3vh;
+}
+
+.logos {
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: 3vw;
+    padding: 5px;
+}
+
+.logo {
+    height: 46px;
+    width: auto;
+    margin-left: 3px;
+    margin-bottom: .5rem;
+}
+
+.logo:hover {
+    opacity: .5;
+    cursor: pointer;
+    background-color: #767A89;
+    outline: #000 solid 1px;
+}
+
+.LILogo {
+    width: 46px;
+    height: auto;
+}
+
+.contactMe {
+    font-size: 2rem;
+    color: black;
+}
+
+.animation-area {
+    width: 100%;
+    height: 100vh;
+}
+
+.typewriter {
+    color: white;
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }   
+}
+
+
+@media all and (max-width: 768px) {
+    .spacerMobile {
+        overflow-x: hidden;
+    }
+
+    .projectsTitleMobile {
+        margin-top: 8vh;
+        font-size: 2rem;
+    }
+
+    .slideMobile {
+        overflow-y: scroll;
+        height: 30vh;
+        width: 80vw;
+        font-size: 1rem;
+    }
+
+    .carousel-button-mobile {
+        font-size: 2.5rem;
+        top: 72%;
+        transform: translateY(-70%);
+    }
+
+    .titleMobile {
+        margin-top: 20vh;
+        font-size: 1.75rem;
+    }
+
+    .academicsWholeMobile {
+        font-size: 1rem;
+        width: 90%;
+        padding: 6px;
+        outline: #fff solid 1px;
+        border-radius: 1em;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 45vh;
+    }
+
+    .flexSubsectionMobile {
+        font-size: 1rem;
+    }
+
+    .technologiesListMobile {
+        width: 75%;
+        left: 1px;
+        display: flex;
+        justify-content: start;
+        flex-flow: wrap;
+        font-size: 1rem;
+        text-align: left;
+        margin-top: 1vh;
+        height: 45vh;
+        overflow-y: scroll;
+        outline: #fff solid 1px;
+        border-radius: 1em;
+    }
+
+    .aboutMeMobile {
+        overflow-y: scroll;
+        height: 45vh;
+        margin-left: 30vw;
+        margin-top: -12vh;
+        font-size: .95rem;
+        margin-right: 1.5vw;
+    }
+
+    .aboutMePhotoMobile {
+        height: 72px;
+        width: auto;
+    }
+
+    .navbarMobile {
+        justify-content: space-between;
+
+    }
+
+    .navbarItemMobile {
+        font-size: .75rem;
+        margin-top: 1vh;
+        padding: 5px;
+        margin-right: 2vw;
+        margin-left: 2vw;
+    }
+
+    .homeMsgMobile {
+        font-size: 1.5rem;
+    }
+
+    .subHomeMsgMobile {
+        font-size: 1.25rem;
+    }
+}

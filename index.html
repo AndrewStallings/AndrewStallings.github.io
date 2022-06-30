@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AStallings</title>
+    <link rel="stylesheet" href="portfolio.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Lato&display=swap" rel="stylesheet">
+    <script src="./javascript/Carousel.js" defer></script>
+</head>
+
+<body>
+    <div class="navbar navbarMobile">
+        <button class="navbar-item navbarItemMobile" id="navProjects">Projects</button>
+        <button class="navbar-item navbarItemMobile" id="navAcademics">Academics</button>
+        <button class="navbar-item navbarItemMobile" id="navTechnologies">Technologies</button>
+        <button class="navbar-item navbarItemMobile" id="navAboutMe">About Me</button>
+        <script src="./javascript/Navigation.js"></script>
+    </div>
+    <script src="./javascript/Typewriter.js"></script>
+    <section class="home spacer spacerMobile">
+        <p class="homeMsg homeMsgMobile">
+            <span>Hi, I'm Andrew. 👋</span>
+        </p>
+        <p>
+            <span class="subHomeMsg subHomeMsgMobile" id="typewriterJob"></span>
+            <span class="typewriter subHomeMsg subHomeMsgMobile">|</span>
+        </p>
+    </section>
+    <section class="spacer projectsBackground projects spacerMobile" id="projects">
+        <div class="projectsContainer" data-carousel>
+            <h1 class="projectsTitle projectsTitleMobile">Projects</h1>
+            <button class="carousel-button carousel-button-mobile prev" data-carousel-button="prev">&#8592;</button>
+            <button class="carousel-button carousel-button-mobile next" data-carousel-button="next">&#8594;</button>
+            <ul class="projectsList" data-slides>
+                <li class="slide claimsManagementOutline slideMobile" data-active>
+                    <h1 class="claimsManagementTitle">Claims Management Software</h1>
+                    <p>
+                        <strong>Project details - </strong>I had a great opportunity to apprentice a professional
+                        software engineer, together we worked on a project that would make it easier
+                        for insurance adjusters to manage claims they are working on. On this project I helped
+                        create key features like the login portal, user input forms, and displaying data from a
+                        NoSQL database.
+                    </p>
+                    <p>
+                        <strong>Technologies - </strong> This project uses Typescript, React, and Tailwind CSS for the
+                        front-end.
+                        The back-end uses firebase. The database uses the NoSQL database provided by firebase.
+                    </p>
+                </li>
+                <li class="slide antiEbayOutline slideMobile">
+                    <h1 class="antiEbayTitle">
+                        Anti eBay
+                        <a href="https://github.com/AntiEbay/AntiEbay" target="_blank">
+                            <img class="githubLogo" src="./Assets/GitHub-Mark-Light-32px.png">
+                        </a>
+                    </h1>
+                    <p>
+                        <strong>Project details - </strong>This was my capstone project at Central Washington
+                        University.
+                        I was on a team with four of my peers and given a client. In our case
+                        the project was to create a e-commerce website that is the opposite of eBay where
+                        vendors would bid on client requests. We did 7 weeks of programming on this project and 2
+                        weeks of preparation. While the website could use more polish I'm proud of what we accomplished
+                        during this timeframe and I learned a lot including React hooks, REST API's, and Jest.
+                    </p>
+                    <p>
+                        <strong>Technologies - </strong>On this project we used a React front-end, Spring back-end, and
+                        mariaDB as our
+                        database. Jest and JUnit were used for testing.
+                    </p>
+                </li>
+                <li class="slide twitterScraperOutline slideMobile">
+                    <h1 class="twitterScraperTitle">Twitter Scraper</h1>
+                    <p>
+                        <strong>Project details - </strong> This project used the twitter API and python to compare
+                        engagement metrics
+                        for individual profiles or groups of profiles. The metrics used were follower count, and data
+                        the on
+                        most recent tweets such as likes and comments. The data was then exported to a spreadsheet.
+                    </p>
+                    <p>
+                        <strong>Technologies - </strong> I completed this project individually using python and the
+                        Twitter API to
+                        get and manipulate the data. I then stored the results in a CSV file.
+                    </p>
+                    </li.slide>
+                <li class="slide todoOutline slideMobile">
+                    <h1 class="todoTitle">
+                        Todo App
+                        <a href="https://github.com/AndrewStallings/TodoApp" target="_blank">
+                            <img class="githubLogo" src="./Assets/GitHub-Mark-Light-32px.png">
+                        </a>
+                    </h1>
+                    <p>
+                        <strong>Project details - </strong>I started using a Todo App in 2020 and it was one of the
+                        biggest increases ever in my personal productivity.
+                        However, the Todo App I had been using became bloated and ad ridden. I decided it would be fun
+                        to build one
+                        for myself that focused on a minimalist design and features I wanted.
+                    </p>
+                    <p>
+                        <strong>Technologies - </strong> React and Typescript where used to build the application. To
+                        convert the web app into a
+                        desktop application I used Electron with Electron-React-Boilerplate.
+                    </p>
+                    </li.slide>
+            </ul>
+        </div>
+    </section>
+    <section class="academics academicsBackground spacer spacerMobile" id="academics">
+        <h1 class="academicsTitle titleMobile">Academics</h1>
+        <div class="academicsWhole academicsWholeMobile">
+            <p>
+                I graduated Central Washington University with a degree in Computer Science, where I graduated
+                cum laude with a 3.674 cumulative GPA. I also was on the dean's list 2020-2022.
+            </p>
+            <div class="academicsSection">
+                <h3>Relevant Courses</h3>
+                <div class="flexSubsection flexSubsectionMobile">
+                    <ul>
+                        <li>
+                            Data Structures I & II
+                        </li>
+                        <li>
+                            Operating Systems
+                        </li>
+                        <li>
+                            Database Management Systems
+                        </li>
+                        <li>
+                            Cybersecurity
+                        </li>
+                        <li>
+                            Technical Writing in CS
+                        </li>
+                        <li>
+                            Algorithm Analysis
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            Discrete Math
+                        </li>
+                        <li>
+                            Mobile Development
+                        </li>
+                        <li>
+                            User Interface & Design
+                        </li>
+                        <li>
+                            Networks and Data Communication
+                        </li>
+                        <li>
+                            Lab Experience in Teaching CS. 
+                        </li>
+                        <li>
+                            Computer Architecture I & II
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="technologies technologiesBackground spacer spacerMobile" id="technologies">
+        <h1 class="technologiesTitle titleMobile">Technologies</h1>
+        <div class="flexSubsection technologiesListMobile">
+            <div class="extraX-AxisMargin">
+                <h3>Languages</h3>
+                <ul>
+                    <li>
+                        Java
+                    </li>
+                    <li>
+                        C++
+                    </li>
+                    <li>
+                        Javascript & Typescript
+                    </li>
+                    <li>
+                        SQL
+                    </li>
+                    <li>
+                        Python
+                    </li>
+                    <li>
+                        HTML
+                    </li>
+                    <li>
+                        CSS
+                    </li>
+                </ul>
+            </div>
+            <div class="extraX-AxisMargin">
+                <h3>Frameworks and Libraries</h3>
+                <ul>
+                    <li>
+                        React
+                    </li>
+                    <li>
+                        JUnit
+                    </li>
+                    <li>
+                        Jest
+                    </li>
+                    <li>
+                        Tailwind CSS
+                    </li>
+                    <li>
+                        Electron-React-Boilerplate
+                    </li>
+                </ul>
+            </div>
+            <div class="extraX-AxisMargin">
+                <h3>Technical Tools</h3>
+                <ul>
+                    <li>
+                        Git
+                    </li>
+                    <li>
+                        Github
+                    </li>
+                    <li>
+                        Visual Studio Code
+                    </li>
+                    <li>
+                        Linux
+                    </li>
+                    <li>
+                        Firebase
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="aboutMe spacer aboutMeBackground spacerMobile" id="aboutMe">
+        <h1 class="aboutMeTitle titleMobile">About Me</h1>
+        <img class="aboutMePhoto aboutMePhotoMobile" src="./Assets/photo.jpg">
+        <p class="aboutMeParagraph aboutMeMobile">
+            I'm a recent computer science graduate who is looking to start writing software that can have a positive impact
+            on the community. I really started to love programming in 2020 once I took my Data Structures class.
+            Implementing and visualizing different data structures helped me to develop my problem solving skills and is something I try to 
+            incorporate into different aspects of my life. I'm excited to work on software that solves real world problems. 
+            While continuing to better myself by learning new techniques and technologies.
+        </p>
+        <div class="logos">
+            <a href="https://www.linkedin.com/in/andrew-stallings-333095204/" target="_blank">
+                <img class="LILogo logo" src="./Assets/LI-Logo.png">
+            </a>
+            <a href="https://github.com/AndrewStallings" target="_blank">
+                <img class="logo" src="./Assets/GitHub-Mark-32px.png">
+            </a>
+        </div>
+    </section>
+</body>
+
+</html>
