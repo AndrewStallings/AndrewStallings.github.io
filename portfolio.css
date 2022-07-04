@@ -453,3 +453,19 @@ p {
         font-size: 1.25rem;
     }
 }
+
+
+
+@media all and (max-width: 1600px) {
+    .slide {
+        height: 40vh;
+        font-size: 1.25em;
+    }
+
+    .aboutMeTitle {
+        margin-top: 23vh;
+    }
+    .aboutMeParagraph {
+        margin-left: 5vw;
+    }
+}
