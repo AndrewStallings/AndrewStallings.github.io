@@ -359,6 +359,19 @@ p {
     }   
 }
 
+@media all and (max-width: 1600px) {
+    .slide {
+        height: 40vh;
+        font-size: 1.25em;
+    }
+
+    .aboutMeTitle {
+        margin-top: 23vh;
+    }
+    .aboutMeParagraph {
+        margin-left: 5vw;
+    }
+}
 
 @media all and (max-width: 768px) {
     .spacerMobile {
@@ -424,12 +437,18 @@ p {
         margin-left: 30vw;
         margin-top: -12vh;
         font-size: .95rem;
-        margin-right: 1.5vw;
+        margin-right: 1vw;
     }
 
     .aboutMePhotoMobile {
         height: 72px;
         width: auto;
+    }
+
+    .aboutMeParagraph {
+        margin-left: 35vw;
+        padding: 4px;
+        margin-right: 3vw;
     }
 
     .navbarMobile {
@@ -455,17 +474,3 @@ p {
 }
 
 
-
-@media all and (max-width: 1600px) {
-    .slide {
-        height: 40vh;
-        font-size: 1.25em;
-    }
-
-    .aboutMeTitle {
-        margin-top: 23vh;
-    }
-    .aboutMeParagraph {
-        margin-left: 5vw;
-    }
-}
